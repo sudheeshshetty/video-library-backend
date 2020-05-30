@@ -1,0 +1,24 @@
+{
+  "name": "dislike",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    },
+    "video": {
+      "type": "belongsTo",
+      "model": "video",
+      "foreignKey": "videoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

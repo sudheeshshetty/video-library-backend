@@ -1,0 +1,45 @@
+{
+  "name": "video",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "totallikes": {
+      "type": "number"
+    },
+    "totaldislikes": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "likes": {
+      "type": "hasMany",
+      "model": "like",
+      "foreignKey": ""
+    },
+    "dislikes": {
+      "type": "hasMany",
+      "model": "dislike",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
