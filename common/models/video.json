@@ -21,10 +21,12 @@
       "required": true
     },
     "totallikes": {
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "totaldislikes": {
-      "type": "number"
+      "type": "number",
+      "default": 0
     }
   },
   "validations": [],
